@@ -1,113 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TecNov</title>
   <style>
-    /* Estilos Globais */
     body {
-      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000; /* Fundo preto */
-      color: #fff; /* Texto branco */
     }
-
-    /* Estilos do Cabeçalho */
     header {
-      background-color: #000; /* Fundo preto para o cabeçalho */
-      color: #fff; /* Texto branco para o cabeçalho */
+      background-color: #000;
+      color: #fff;
       padding: 20px;
       text-align: left;
+      margin-bottom: 20px;
     }
-
     header h1 {
-      font-size: 32px;
       margin: 0;
+      font-size: 36px;
     }
-
-    /* Estilos das Seções */
     section {
-      padding: 40px 20px; /* Adicionando espaço apenas acima e abaixo da seção e 20px de espaçamento nas bordas horizontais */
+      padding-left: 20px; 
+      margin-bottom: 120px; /* Dobrando a margem na parte inferior */
     }
-
     section h2 {
       font-size: 24px;
-      margin-bottom: 20px;
-      color: #fff; /* Texto branco para os títulos */
+      margin-top: 0;
     }
-
     section p {
-      font-size: 18px;
       margin-bottom: 20px;
-      line-height: 1.6; /* Espaçamento entre linhas */
+      line-height: 1.5;
     }
-
-    /* Estilos dos Benefícios */
-    #beneficios {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    #beneficios li {
-      font-size: 18px;
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-
-    /* Estilos do Botão de Orçamento */
-    #orcamento-button {
-      display: inline-block;
-      background-color: #888; /* Botão cinza */
-      color: #fff; /* Texto branco */
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    #orcamento-button:hover {
-      opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
-    }
-
-    /* Estilos do Botão do Instagram */
-    #instagram-button {
-      display: inline-block;
-      background-color: transparent; /* Botão sem cor de fundo */
-      color: #fff; /* Texto branco */
-      border: 1px solid #fff; /* Borda branca */
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 18px;
-      margin-bottom: 20px;
-      text-align: center;
-      margin-left: 50%; /* Centraliza o botão */
-      transform: translateX(-50%); /* Corrige a centralização */
-    }
-
-    #instagram-button:hover {
-      background-color: #fff;
-      color: #000;
-    }
-
-    /* Estilos do Rodapé */
     footer {
+      background-color: #000;
+      color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 20px 0;
     }
-
     footer p {
       margin: 0;
     }
-
-    /* Estilo da linha divisória */
-    .divider {
-      border-bottom: 1px solid #fff; /* Linha branca */
-      margin: 40px auto; /* Espaçamento após a linha e centralização horizontal */
-      max-width: 80%; /* Limita a largura da linha */
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -117,47 +57,56 @@
     <h1>TecNov</h1>
   </header>
 
-  <!-- Visão Geral -->
+  <!-- Banner de Destaque -->
   <section>
-    <h2>Visão Geral</h2>
-    <p>Descubra como nosso kit de armazenamento de energia oferece autonomia e confiabilidade quando você mais precisa. Com instalação simplificada e tecnologia avançada, nossa solução proporciona tranquilidade em situações de emergência e durante suas viagens.</p>
+    <h2>Tenha energia confiável sempre que precisar.</h2>
+    <p>Descubra nossos kits de backup de energia.</p>
   </section>
 
-  <!-- Linha divisória -->
-  <div class="divider"></div>
-
-  <!-- Benefícios -->
+  <!-- Sobre Nossa Empresa -->
   <section>
-    <h2>Benefícios</h2>
-    <ul id="beneficios">
-      <li><strong>Autonomia e Confiabilidade:</strong> Mantenha-se protegido contra falhas de energia e imprevistos, garantindo que sua casa ou empresa tenha energia sempre disponível.</li>
-      <li><strong>Facilidade de Instalação:</strong> Nosso kit é projetado para instalação simples e rápida, permitindo que você aproveite os benefícios do armazenamento de energia sem complicações.</li>
-      <li><strong>Suporte Técnico Especializado:</strong> Conte com nossa equipe de suporte técnico para ajudá-lo em todas as etapas, desde a instalação até o uso contínuo do produto.</li>
-      <li><strong>Utilidade Versátil:</strong> Além de ser uma fonte de energia confiável em situações de emergência, nosso kit é perfeito para viagens e aventuras ao ar livre, garantindo que você nunca fique sem energia quando estiver fora de casa.</li>
-    </ul>
+    <h2>Sobre Nós</h2>
+    <p>Somos a TecNov, uma empresa comprometida em fornecer soluções de energia confiáveis e acessíveis.</p>
   </section>
 
-  <!-- Linha divisória -->
-  <div class="divider"></div>
-
-  <!-- Solicitar Orçamento -->
+  <!-- Nossos Produtos -->
   <section>
-    <h2>Solicitar Orçamento</h2>
-    <p>Nossas soluções são adaptadas de acordo com as necessidades específicas de cada cliente. Entre em contato conosco pelo WhatsApp para solicitar um orçamento.</p>
-    <a href="https://api.whatsapp.com/send?phone=5521968734457&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20kit%20de%20armazenamento%20de%20energia%20da%20TecNov." target="_blank" rel="noopener noreferrer" id="orcamento-button">Solicitar Orçamento</a>
+    <h2>Nossos Produtos</h2>
+    <p>Kit Residencial: Energia garantida para sua casa.<br>
+       Kit Empresarial: Soluções personalizadas para sua empresa.<br>
+       Kit Portátil: Energia confiável em qualquer lugar.</p>
+    <p>Saiba mais sobre cada kit e descubra qual é o melhor para você.</p>
   </section>
 
-  <!-- Linha divisória -->
-  <div class="divider"></div>
-
-  <!-- Botão do Instagram -->
+  <!-- Como Funciona -->
   <section>
-    <a href="https://www.instagram.com/tecnov.br?igshid=1v0x34j2xqgcj" target="_blank" rel="noopener noreferrer" id="instagram-button">Instagram</a>
+    <h2>Como Funciona</h2>
+    <p>Nossos kits de backup de energia são projetados para oferecer facilidade de uso e confiabilidade.</p>
+  </section>
+
+  <!-- Por Que Escolher Nossos Kits -->
+  <section>
+    <h2>Por Que Nossos Kits</h2>
+    <p>Confiança: Nossos produtos são construídos para durar, proporcionando energia confiável sempre que você precisar.<br>
+       Versatilidade: Com uma variedade de kits disponíveis, oferecemos soluções para diferentes necessidades e aplicações.<br>
+       Suporte ao Cliente: Estamos aqui para ajudar.</p>
+  </section>
+
+  <!-- Soluções e Aplicações -->
+  <section>
+    <h2>Soluções e Aplicações</h2>
+    <p>Nossos kits de backup de energia são ideais para uma variedade de aplicações, incluindo residências, escritórios, eventos ao ar livre e muito mais.</p>
+  </section>
+
+  <!-- Contato e Suporte -->
+  <section>
+    <h2>Contato e Suporte</h2>
+    <p>Para mais informações ou suporte, entre em contato conosco pelo Instagram: <a href="https://www.instagram.com/tecnov.br?igshid=YTF5d3poYzlxOHYw">tecnov.br</a></p>
   </section>
 
   <!-- Rodapé -->
   <footer>
-    <p>TecNov &copy; 2024 - Todos os direitos reservados.</p>
+    <p>Direitos Reservados © 2024 TecNov</p>
   </footer>
 </body>
 </html>
