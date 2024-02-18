@@ -10,85 +10,104 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-      background-color: #fff; /* Fundo branco padrão */
-      color: #333; /* Texto preto padrão */
-    }
-    
-    h1, h2 {
-      text-align: center;
-      margin-bottom: 30px;
+      background-color: #000; /* Fundo preto */
+      color: #fff; /* Texto branco */
     }
 
     /* Estilos do Cabeçalho */
     header {
       background-color: #000; /* Fundo preto para o cabeçalho */
       color: #fff; /* Texto branco para o cabeçalho */
-      padding: 20px 0;
+      padding: 20px;
+      text-align: left;
     }
 
     header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 32px;
+      margin: 0;
     }
 
     /* Estilos das Seções */
     section {
-      padding: 50px 20px;
-      text-align: center;
-      background-color: #f8f9fa; /* Fundo cinza claro para as seções */
-      color: #333; /* Texto preto para as seções */
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 40px;
+      padding: 40px 20px; /* Adicionando espaço apenas acima e abaixo da seção e 20px de espaçamento nas bordas horizontais */
     }
 
     section h2 {
       font-size: 24px;
       margin-bottom: 20px;
+      color: #fff; /* Texto branco para os títulos */
     }
 
     section p {
       font-size: 18px;
       margin-bottom: 20px;
-      text-align: justify;
+      line-height: 1.6; /* Espaçamento entre linhas */
     }
 
-    section ul {
-      list-style-type: none;
-      margin-bottom: 20px;
-      text-align: left;
+    /* Estilos dos Benefícios */
+    #beneficios {
+      list-style: none;
+      padding-left: 0;
     }
 
-    section ul li {
+    #beneficios li {
       font-size: 18px;
       margin-bottom: 10px;
+      line-height: 1.6;
     }
 
-    /* Estilização adicional */
-    footer {
-      background-color: #000; /* Fundo preto para o rodapé */
-      color: #fff; /* Texto branco para o rodapé */
+    /* Estilos do Botão de Orçamento */
+    #orcamento-button {
+      display: inline-block;
+      background-color: #888; /* Botão cinza */
+      color: #fff; /* Texto branco */
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    #orcamento-button:hover {
+      opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
+    }
+
+    /* Estilos do Botão do Instagram */
+    #instagram-button {
+      display: inline-block;
+      background-color: transparent; /* Botão sem cor de fundo */
+      color: #fff; /* Texto branco */
+      border: 1px solid #fff; /* Borda branca */
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 20px;
       text-align: center;
-      padding: 20px 0;
-      width: 100%;
+      margin-left: 50%; /* Centraliza o botão */
+      transform: translateX(-50%); /* Corrige a centralização */
     }
 
-    /* Ajuste para tema escuro */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #000; /* Fundo preto */
-        color: #fff; /* Texto branco */
-      }
+    #instagram-button:hover {
+      background-color: #fff;
+      color: #000;
+    }
 
-      section {
-        background-color: #333; /* Fundo cinza escuro para as seções */
-        color: #fff; /* Texto branco para as seções */
-      }
+    /* Estilos do Rodapé */
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
 
-      header {
-        background-color: #000; /* Mantém o cabeçalho preto */
-      }
+    footer p {
+      margin: 0;
+    }
+
+    /* Estilo da linha divisória */
+    .divider {
+      border-bottom: 1px solid #fff; /* Linha branca */
+      margin: 40px auto; /* Espaçamento após a linha e centralização horizontal */
+      max-width: 80%; /* Limita a largura da linha */
     }
   </style>
 </head>
@@ -99,42 +118,46 @@
   </header>
 
   <!-- Visão Geral -->
-  <section id="overview">
+  <section>
     <h2>Visão Geral</h2>
-    <p>Bem-vindo à TecNov. Oferecemos soluções de armazenamento de energia com tecnologia de ponta para residências e empresas.</p>
+    <p>Descubra como nosso kit de armazenamento de energia oferece autonomia e confiabilidade quando você mais precisa. Com instalação simplificada e tecnologia avançada, nossa solução proporciona tranquilidade em situações de emergência e durante suas viagens.</p>
   </section>
 
-  <!-- Componentes do Kit -->
-  <section id="components">
-    <h2>Componentes do Kit</h2>
-    <ul>
-      <li>Bateria de Longa Duração</li>
-      <li>Carregador Eficiente</li>
-      <li>Inversor de Alta Performance</li>
-    </ul>
-  </section>
+  <!-- Linha divisória -->
+  <div class="divider"></div>
 
-  <!-- Benefícios para o Cliente -->
-  <section id="benefits">
+  <!-- Benefícios -->
+  <section>
     <h2>Benefícios</h2>
-    <ul>
-      <li>Fornecimento de energia confiável durante quedas de energia</li>
-      <li>Economia de custos com energia elétrica</li>
-      <li>Contribuição para um estilo de vida mais sustentável</li>
+    <ul id="beneficios">
+      <li><strong>Autonomia e Confiabilidade:</strong> Mantenha-se protegido contra falhas de energia e imprevistos, garantindo que sua casa ou empresa tenha energia sempre disponível.</li>
+      <li><strong>Facilidade de Instalação:</strong> Nosso kit é projetado para instalação simples e rápida, permitindo que você aproveite os benefícios do armazenamento de energia sem complicações.</li>
+      <li><strong>Suporte Técnico Especializado:</strong> Conte com nossa equipe de suporte técnico para ajudá-lo em todas as etapas, desde a instalação até o uso contínuo do produto.</li>
+      <li><strong>Utilidade Versátil:</strong> Além de ser uma fonte de energia confiável em situações de emergência, nosso kit é perfeito para viagens e aventuras ao ar livre, garantindo que você nunca fique sem energia quando estiver fora de casa.</li>
     </ul>
   </section>
 
-  <!-- Contato -->
-  <section id="contact">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco para mais informações ou para adquirir seu kit de armazenamento de energia:</p>
-    <p>E-mail: contato@tecnov.com</p>
-    <p>Telefone: (XX) XXXX-XXXX</p>
+  <!-- Linha divisória -->
+  <div class="divider"></div>
+
+  <!-- Solicitar Orçamento -->
+  <section>
+    <h2>Solicitar Orçamento</h2>
+    <p>Nossas soluções são adaptadas de acordo com as necessidades específicas de cada cliente. Entre em contato conosco pelo WhatsApp para solicitar um orçamento.</p>
+    <a href="https://api.whatsapp.com/send?phone=5521968734457&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20kit%20de%20armazenamento%20de%20energia%20da%20TecNov." target="_blank" rel="noopener noreferrer" id="orcamento-button">Solicitar Orçamento</a>
+  </section>
+
+  <!-- Linha divisória -->
+  <div class="divider"></div>
+
+  <!-- Botão do Instagram -->
+  <section>
+    <a href="https://www.instagram.com/tecnov.br?igshid=1v0x34j2xqgcj" target="_blank" rel="noopener noreferrer" id="instagram-button">Instagram</a>
   </section>
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2024 TecNov. Todos os direitos reservados.</p>
+    <p>TecNov &copy; 2024 - Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
